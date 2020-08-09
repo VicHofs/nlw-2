@@ -1,0 +1,83 @@
+:root {
+  font-size: 60%;
+
+  --color-background: #F0F0F7;
+  --color-primary-lighter: #9871F5;
+  --color-primary-light: #916BEA;
+  --color-primary: #8257E5;
+  --color-primary-text: #8257E5;
+  --color-primary-dark: #774DD6;
+  --color-primary-darker: #6842C2;
+  --color-secondary: #04D361;
+  --color-secondary-dark: #04BF58;
+  --color-title-in-primary: #FFFFFF;
+  --color-text-in-primary: #D4C2FF;
+  --color-text-title: #32264D;
+  --color-text-complement: #9C98A6;
+  --color-text-base: #6A6180;
+  --color-line-in-white: #E6E6F0;
+  --color-input-background: #F8F8FC;
+  --color-button-text: #FFFFFF;
+  --color-box-base: #FFFFFF;
+  --color-box-footer: #FAFAFC;  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background: var(--color-background);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, input, button, textarea, select {
+  font: 500 1.6rem Poppins;
+  color: var(--color-text-base);
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1d1d1d;
+    --color-primary-lighter: #8652ff;
+    --color-primary-light: #6e38ec;
+    --color-primary: #602dd6;
+    --color-primary-text: #7a43fa;
+    --color-primary-dark: #471fa2;
+    --color-primary-darker: #2f156c;
+    --color-secondary: #00c458;
+    --color-secondary-dark: #04b654;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #9166f7;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #dcd7e9;
+    --color-line-in-white: #505050;
+    --color-input-background: #3a3a3a;
+    --color-button-text: #ffffff;
+    --color-box-base: #242424;
+    --color-box-footer: #202020;
+  }
+}
